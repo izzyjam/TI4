@@ -1,0 +1,20 @@
+Agenda Phase
+- Unlocked once Mecatol Rex has been claimed
+
+- Speaker draws first Agenda
+- Players starting from left of Speaker announce their votes (Speaker votes last)
+- Vote by exhausting any number of planets
+- 1 point of Influence = 1 vote For or Against the Agenda (or to elect a player/planet, depending on card)
+- Trade Goods cannot be used as Influence for votes
+- Players cannot vote for more than 1 option, but may abstain
+- Speaker breaks ties
+- Resolve Agenda
+  - Directives tend to be 1 time effects, while Laws will stay in play if passed
+
+- Speaker then draws a SECOND Agenda
+- Same procedure, except planets that already voted (exhausted) CANNOT be used
+
+- Players may make deals during each vote to bribe other players
+  - Components may be traded even if players are not neighbours
+
+- Ready all planets after both votes, then New Round

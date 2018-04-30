@@ -1,0 +1,37 @@
+Action Phase
+- Go around in Initiative Order until everyone has passed:
+  - Choose 1 per turn:
+    - Activate a system (Tactical Action)
+    - Use your Strategy card (Strategic Action)
+    - Use "Action:" abilities on components (Component Action)
+  - Cannot pass until you've at least completed your Strategic Action
+
+Tactical Action
+- Place a Tactic command token on system to Activate it
+  - Cannot activate if system already has one of your Tactic tokens
+- May have units MOVE TO (not from) active system
+- Space combat (if more than 1 player)
+- Invasion (send ground troops to planet)
+- Production if system contains a Space Dock (limited by Fleet pool)
+
+Strategic Action
+- Use Strategy card's Primary Ability
+- OTHER players may use Secondary Ability (often at the cost of Strategy command tokens)
+- Must use this at some point in the round before you're able to pass turn
+- Players who have passed may still take part in Secondary Ability
+- Flip card over after. It's no longer available this round.
+
+Component Action
+- Game components that say "Action:", ie Action Cards, Faction Sheets, Tech cards
+
+Trades
+- Each turn active player can make 1 deal with each other player
+- Promissory Notes, Commodities, Trade Gods and favors can be traded
+- Can do so even mid combat
+- If components are involved (ie Commodities), players must be neighbours (share borders)
+- Simple (ie Commodities for Commodities) or immediate (goods for retreat) are BINDING DEALS
+- Delayed deals (ie goods for favor in next turn) are NON-BINDING and can be honoured or broken
+
+Passing
+- Only available after Strategy card has been used
+- Can still participate in other players' Strategy cards after passing

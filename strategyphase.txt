@@ -1,0 +1,8 @@
+Strategy Phase
+- Choose strategy/initiative for the round
+
+- Current Speaker chooses first
+- Number on strategy card = Initiative Order = turn order
+- Unchosen strategies gain 1 trade good per turn (ie becomes more desirable)
+- Each provide a powerful Primary Ability
+  - Secondary Ability allows others to take part at the cost of Strategy command tokens
