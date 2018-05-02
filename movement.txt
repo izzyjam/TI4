@@ -1,0 +1,14 @@
+- Ships MOVE TO Active System
+- Can call on any number of ships, but must maintain Fleet limit
+- Any ship can arrive as long as they have high enough Move value (1 = 1 hex)
+- May take ships from multiple systems
+- Cannot take ships from systems with a Command token (ie, previously activated)
+- Cannot move through enemy ship or Fighter occupied space
+- May transport Fighters and Infantry up to Capacity of ship
+- Can pick up but not drop-off along the way
+
+- Wormholes are adjacent (a/a and b/b)
+- Asteroid Fields are impassible
+- Supernova are impassible
+- Nebula can be moved into, but not through. Defenders have +1 to combat. Ships move out at Move of 1
+- Gravity Rifts give +1 movement, but must roll D10 for each ship and destoy on 3 or less

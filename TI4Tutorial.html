@@ -10,7 +10,7 @@
   
   .secondary {
     position: relative;
-    left: 10px;
+    left: -10px;
   }
   
   ul {
@@ -127,6 +127,69 @@
           </li>
         </ul>
         <li>Player cannot pass until they've at least completed their Strategic Action</li>
+      </ul>
+    </div>
+  </p>
+  <p style="position: relative; left: 10px">-- <a href="#a" data-toggle="collapse" data-target="#movement">Movement Rules</a>
+    <div id="movement" class="collapse" style="position: relative; left: 10px">
+      <ul class="content">
+        <li>Ships MOVE TO Active System</li>
+        <li>Can call on any number of ships, but must maintain Fleet limit</li>
+        <li>Any ship may move to system as long as they have high enough Move value (1 = 1 hex)</li>
+        <li>May take ships from multiple systems</li>
+        <li>Cannot take ships from systems with a Command token (ie, previously activated)</li>
+        <li>Cannot move through enemy ship or Fighter occupied space</li>
+        <li>May transport Fighters and Infantry up to Capacity of ship</li>
+        <li>Can pick up but not drop-off along the way</li>
+        <li>Players in active system may use Space Cannon abilities</li>
+      </ul>
+      <ul class="content">
+        <li>Wormholes are adjacent (a/a and b/b)</li>
+        <li>Asteroid Fields cannot be moved through or into</li>
+        <li>Supernova cannot be moved through or into</li>
+        <li>Nebula can be moved into, but not through. Defenders have +1 to combat. Ships move out at Move of 1</li>
+        <li>Gravity Rifts give +1 movement when moving through or out, but must roll D10 for each ship and destoy on 3 or less</li>
+      </ul>
+    </div>
+  </p>
+  <p style="position: relative; left: 10px">-- <a href="#a" data-toggle="collapse" data-target="#spacecombat">Space Combat Rules</a>
+    <div id="spacecombat" class="collapse" style="position: relative; left: 10px">
+      <ul class="content">
+        <li>Anti-fighter Barrage
+          <ul class="content">
+            <li>Can only destroy Fighters (essentially cannon fodder)</li>
+          </ul>
+        </li>
+        <li>Announce Retreat
+          <ul class="content">
+            <li>Either player can announce intention to retreat</li>
+            <li>Ground forces can be picked up for retreat (limited by Capacity)</li>
+          </ul>
+        </li>
+        <li>Combat Rolls
+          <ul class="content">
+            <li>Both players roll one D10 for each ship individually</li>
+            <li>If it's equal or higher than the ship's combat value, it's a HIT</li>
+            <li>Ships with Burst icons roll that many dice instead</li>
+          </ul>
+        </li>
+        <li>Assign Hits
+          <ul class="content">
+            <li>Players choose and destroy THEIR OWN SHIPS</li>
+            <li>1 hit against = 1 ship destroyed, regardless of value</li>
+          </ul>
+        </li>
+        <li>Retreat
+          <ul class="content">
+            <li>Can only retreat if announced earlier</li>
+            <li>Move ALL ships to adjacent system they control (not simply unoccupied)</li>
+            <li>Cannot retreat if no system available</li>
+            <li>Place Command token from Reinforcements in destination system (if it doesn't have one already)</li>
+          </ul>
+        </li>
+        <li>Combat ends when all units from either side is destroyed or retreated</li>
+        <li>Otherwise start next combat from Announce Retreat step</li>
+        <li>Player has won the combat if they have at least 1 ship remaining in Active System</li>
       </ul>
     </div>
   </p>
