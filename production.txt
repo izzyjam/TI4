@@ -1,9 +1,0 @@
-Production
-- May produce new units if system contains a Space Dock
-- Pay for total Cost of units to be produced by spending resources (planets or Trade Goods)
-- Ships produced in space, Infantry produced on planet
-- Production Value of Space Dock limits number of units that can be produced
-- Some units produce at 2 per 1 cost. Both individual unit counts against Production Value
-- If supply is empty for specific unit, player may take it from another system they control
-- Fighters and Infantry may be produced over supply by using marker tokens
-- If enemy ship is in same space, Space Dock is blockaded, and cannot produce Ships (Infantry is okay)
