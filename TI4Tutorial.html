@@ -8,9 +8,8 @@
 
   <style>
   
-  .secondary {
-    position: relative;
-    left: -10px;
+  body {
+    padding-bottom: 50px;
   }
   
   ul {
@@ -28,15 +27,12 @@
 </head>
 <body>
 <div class="container">
-  
-  
-  <h2>Poop dust.</h2>
+<h2>Poop dust.</h2>
   <p><a href="#a" data-toggle="collapse" data-target="#overview">Overview</a>
     <div id="overview" class="collapse">
       <ul>
-        <li>Components</li>
         <li><a href="#a" data-toggle="collapse" data-target="#objectives">Objectives</a>
-          <div id="objectives" class="collapse secondary">
+          <div id="objectives" class="collapse">
             <ul class="content">
               <li>Reach 10 victory points through Public Objectives and UP TO 3 Secret Objectives</li>
               <li>Game ends when no more Public Objective cards can be revealed, in which case, highest VP wins</li>
@@ -48,7 +44,8 @@
           </div>
         </li>
         <li><a href="#a" data-toggle="collapse" data-target="#commandpool">Command Pool</a>
-          <div id="commandpool" class="collapse secondary">
+          <div id="commandpool" class="collapse">
+          <img src="img/cmd.jpg" style="max-width:100%">            
             <ul class="content">
               <li>Represents your ability to issue commands each turn:<br>
                 <ul class="content"><li>3 Tactic tokens<br>
@@ -66,7 +63,7 @@
           </div>
         </li>
         <li><a href="#a" data-toggle="collapse" data-target="#roundstructure">Round Structure</a></li>
-          <div id="roundstructure" class="collapse secondary">
+          <div id="roundstructure" class="collapse">
             <ul class="content">
               <li>1. Strategy Phase</li>
               <li>2. Action Phase</li>
@@ -87,6 +84,15 @@
         <li>Each Strategy provdes the player a powerful Primary Ability<br>
         &nbsp;&nbsp;&nbsp;&nbsp;-- Other players can use Secondary Ability on the card if they spend Strategy command tokens</li>
       </ul>
+      <ul class="content">
+        <li><a href="#a" data-toggle="collapse" data-target="#stratcards">Strategy Cards</a>
+          <div id="stratcards" class="collapse">
+            <img src="img/strat1.jpg" style="max-width: 100%">
+            <br>
+            <img src="img/strat2.jpg" style="max-width: 100%">
+          </div>
+        </li>
+      </ul>
     </div>
   </p>
   <p><a href="#a" data-toggle="collapse" data-target="#actionphase">Action Phase</a>
@@ -96,7 +102,7 @@
         <li>Choose 1 to execute each turn:</li>
         <ul class="content">
           <li><a href="#a" data-toggle="collapse" data-target="#tacticalaction">Activate a system (aka Tactical Action)</a>
-            <div id="tacticalaction" class="collapse secondary">
+            <div id="tacticalaction" class="collapse">
               Steps of Action Phase:
               <ul class="content">
                 <li>1. Place a Tactic command token on system to Activate it<br>
@@ -105,10 +111,11 @@
                 <li>3. Space combat (if more than 1 player's ship in system)</li>
                 <li>4. Invasion (send ground troops to planet)</li>
                 <li>5. Production if system contains a Space Dock (limited by Fleet pool)</li>
+              </ul>
             </div>
           </li>
           <li><a href="#a" data-toggle="collapse" data-target="#strategicaction">Use Strategy card (aka Strategic Action)</a>
-            <div id="strategicaction" class="collapse secondary">
+            <div id="strategicaction" class="collapse">
               <ul class="content">
                 <li>Use Strategy card's Primary Ability</li>
                 <li>OTHER players may use Secondary Ability (often costs Strategy command tokens)</li>
@@ -119,7 +126,7 @@
             </div>
           </li>
           <li><a href="#a" data-toggle="collapse" data-target="#componentaction">Use "Action:" ability on a component (aka Component Action)</a>
-          <div id="componentaction" class="collapse secondary">
+          <div id="componentaction" class="collapse">
             <ul class="content">
               <li>Game components that say "Action:", ie Action Cards, Faction Sheets, Tech cards</li>
             </ul>
@@ -128,88 +135,144 @@
         </ul>
         <li>Player cannot pass until they've at least completed their Strategic Action</li>
       </ul>
-    </div>
-  </p>
-  <p style="position: relative; left: 10px">-- <a href="#a" data-toggle="collapse" data-target="#movement">Movement Rules</a>
-    <div id="movement" class="collapse" style="position: relative; left: 10px">
+      <br>
       <ul class="content">
-        <li>Ships MOVE TO Active System</li>
-        <li>Can call on any number of ships, but must maintain Fleet limit</li>
-        <li>Any ship may move to system as long as they have high enough Move value (1 = 1 hex)</li>
-        <li>May take ships from multiple systems</li>
-        <li>Cannot take ships from systems with a Command token (ie, previously activated)</li>
-        <li>Cannot move through enemy ship or Fighter occupied space</li>
-        <li>May transport Fighters and Infantry up to Capacity of ship</li>
-        <li>Can pick up but not drop-off along the way</li>
-        <li>Players in active system may use Space Cannon abilities</li>
-      </ul>
-      <ul class="content">
-        <li>Wormholes are adjacent (a/a and b/b)</li>
-        <li>Asteroid Fields cannot be moved through or into</li>
-        <li>Supernova cannot be moved through or into</li>
-        <li>Nebula can be moved into, but not through. Defenders have +1 to combat. Ships move out at Move of 1</li>
-        <li>Gravity Rifts give +1 movement when moving through or out, but must roll D10 for each ship and destoy on 3 or less</li>
-      </ul>
-    </div>
-  </p>
-  <p style="position: relative; left: 10px">-- <a href="#a" data-toggle="collapse" data-target="#spacecombat">Space Combat Rules</a>
-    <div id="spacecombat" class="collapse" style="position: relative; left: 10px">
-      <ul class="content">
-        <li>Anti-fighter Barrage
-          <ul class="content">
-            <li>Can only destroy Fighters (essentially cannon fodder)</li>
-          </ul>
+        <li><a href="#a" data-toggle="collapse" data-target="#movement">Movement Rules</a>
+          <div id="movement" class="collapse">
+            <ul class="content">
+              <li>Ships MOVE TO Active System</li>
+              <li>Can call on any number of ships, but must maintain Fleet limit</li>
+              <li>Any ship may move to system as long as they have high enough Move value (1 = 1 hex)</li>
+              <li>May take ships from multiple systems</li>
+              <li>Cannot take ships from systems with a Command token (ie, previously activated)</li>
+              <li>Cannot move through enemy ship or Fighter occupied space</li>
+              <li>May transport Fighters and Infantry up to Capacity of ship</li>
+              <li>Can pick up but not drop-off along the way</li>
+              <li>Players in active system may use Space Cannon abilities</li>
+            </ul>
+            <ul class="content">
+              <li>Wormholes are adjacent (a/a and b/b)</li>
+              <li>Asteroid Fields cannot be moved through or into</li>
+              <li>Supernova cannot be moved through or into</li>
+              <li>Nebula can be moved into, but not through. Defenders have +1 to combat. Ships move out at Move of 1</li>
+              <li>Gravity Rifts give +1 movement when moving through or out, but must roll D10 for each ship and destoy on 3 or less</li>
+            </ul>
+          </div>
         </li>
-        <li>Announce Retreat
-          <ul class="content">
-            <li>Either player can announce intention to retreat</li>
-            <li>Ground forces can be picked up for retreat (limited by Capacity)</li>
-          </ul>
+        <li><a href="#a" data-toggle="collapse" data-target="#spacecombat">Space Combat Rules</a>
+          <div id="spacecombat" class="collapse">
+            <ul class="content">
+              <li>Anti-fighter Barrage
+                <ul class="content">
+                  <li>Ships with this ability may fire preemptively</li>
+                  <li>Can only destroy Fighters (essentially cannon fodder)</li>
+                </ul>
+              </li>
+              <li>Announce Retreat
+                <ul class="content">
+                  <li>Either player can announce intention to retreat</li>
+                  <li>Ground forces can be picked up for retreat (limited by Capacity)</li>
+                </ul>
+              </li>
+              <li>Combat Rolls
+                <ul class="content">
+                  <li>Both players roll one D10 for each ship individually</li>
+                  <li>If it's equal or higher than the ship's combat value, it's a HIT</li>
+                  <li>Ships with Burst icons roll that many dice instead</li>
+                </ul>
+              </li>
+              <li>Assign Hits
+                <ul class="content">
+                  <li>Players choose and destroy THEIR OWN SHIPS</li>
+                  <li>1 hit against = 1 ship destroyed, regardless of value</li>
+                </ul>
+              </li>
+              <li>Retreat
+                <ul class="content">
+                  <li>Can only retreat if announced earlier</li>
+                  <li>Move ALL ships to adjacent system they control (not simply unoccupied)</li>
+                  <li>Cannot retreat if no system available</li>
+                  <li>Place Command token from Reinforcements in destination system (if it doesn't have one already)</li>
+                </ul>
+              </li>
+              <li>Combat ends when all units from either side is destroyed or retreated</li>
+              <li>Otherwise start next combat from Announce Retreat step</li>
+              <li>Player has won the combat if they have at least 1 ship remaining in Active System</li>
+            </ul>
+          </div>
         </li>
-        <li>Combat Rolls
-          <ul class="content">
-            <li>Both players roll one D10 for each ship individually</li>
-            <li>If it's equal or higher than the ship's combat value, it's a HIT</li>
-            <li>Ships with Burst icons roll that many dice instead</li>
-          </ul>
+        <li><a href="#a" data-toggle="collapse" data-target="#invasion">Invasion Rules</a>
+          <div id="invasion" class="collapse">
+            <ul class="content">
+              <li>Bombardment
+                <ul class="content">
+                  <li>Choose 1 planet to use Bombardment ability on</li>
+                  <li>Defender destroys ground forces according to hits</li>
+                </ul>
+              </li>
+              <li>Commit Ground Forces
+                <ul class="content">
+                  <li>Active player lands Infantry from their ships to the planets they wish to invade</li>
+                  <li>Can split forces to separate planets</li>
+                </ul>
+              </li>
+              <li>Space Cannon Defense
+                <ul class="content">
+                  <li>PDS on planet may fire on invaders before landing</li>
+                </ul>
+              </li>
+              <li>Ground Combat
+                <ul class="content">
+                  <li>Resolve ground combat following the same Combat Rolls and Assign Hits rules for space combat</li>
+                  <li>Retreat is NOT possible at this point for either player</li>
+                </ul>
+              </li>
+              <li>Establish Control
+                <ul class="content">
+                  <li>Active player gains control of planet if at least 1 of their units remain</li>
+                  <li>Gain corresponding Planet card from supply/player, and exhaust</li>
+                  <li>Remaining enemy structures (ie PDS, Space Docks) are destroyed</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
         </li>
-        <li>Assign Hits
-          <ul class="content">
-            <li>Players choose and destroy THEIR OWN SHIPS</li>
-            <li>1 hit against = 1 ship destroyed, regardless of value</li>
-          </ul>
+        <li><a href="#a" data-toggle="collapse" data-target="#production">Production Rules</a>
+          <div id="production" class="collapse">
+            <ul class="content">
+              <li>May produce new units if system contains a Space Dock</li>
+              <li>Pay for total Cost of units to be produced by spending resources (planets or Trade Goods)</li>
+              <li>Ships produced in space, Infantry produced on planet</li>
+              <li>Production Value of Space Dock limits number of units that can be produced</li>
+              <li>Some units produce at 2 per 1 cost. Both individual unit counts against Production Value</li>
+              <li>If supply is empty for specific unit, player may take it from another system they control</li>
+              <li>Fighters and Infantry may be produced over supply by using marker tokens</li>
+              <li>If enemy ship is in same space, Space Dock is blockaded, and cannot produce Ships (Infantry is okay)</li>
+            </ul>
+          </div>
+        <li><a href="#a" data-toggle="collapse" data-target="#trading">Trading</a>
+          <div id="trading" class="collapse">
+            <img src="img/goods.jpg" style="max-width: 100%">
+            <ul class="content">
+              <li>Commodities have no inherent value, but become Trade Goods once traded or received from other players</li>
+              <li>Trade Goods can be used as Resource or Influence</li>
+              <li>Each turn active player can make 1 deal with each other player</li>
+              <li>Promissory Notes, Commodities, Trade Goods and favors can be traded</li>
+              <li>Can do so even mid combat</li>
+              <li>If components are involved (ie Commodities), players must be neighbours (share borders)</li>
+              <li>Simple (ie Commodities for Commodities) or immediate (Commodities for retreat) deals are BINDING DEALS</li>
+              <li>Delayed deals (ie goods for favor in next turn) are NON-BINDING and can be honoured or broken</li>
+            </ul>
+          </div>
         </li>
-        <li>Retreat
-          <ul class="content">
-            <li>Can only retreat if announced earlier</li>
-            <li>Move ALL ships to adjacent system they control (not simply unoccupied)</li>
-            <li>Cannot retreat if no system available</li>
-            <li>Place Command token from Reinforcements in destination system (if it doesn't have one already)</li>
-          </ul>
+        <li><a href="#a" data-toggle="collapse" data-target="#passing">Passing</a>
+          <div id="passing" class="collapse">
+            <ul class="content">
+              <li>Only available after Strategy card has been used</li>
+              <li>Can still participate in other players' Strategy cards after passing</li>
+            </ul>
+          </div>
         </li>
-        <li>Combat ends when all units from either side is destroyed or retreated</li>
-        <li>Otherwise start next combat from Announce Retreat step</li>
-        <li>Player has won the combat if they have at least 1 ship remaining in Active System</li>
-      </ul>
-    </div>
-  </p>
-  <p style="position: relative; left: 10px">-- <a href="#a" data-toggle="collapse" data-target="#trading">Trading</a>
-    <div id="trading" class="collapse" style="position: relative; left: 10px">
-      <ul class="content">
-        <li>Each turn active player can make 1 deal with each other player</li>
-        <li>Promissory Notes, Commodities, Trade Gods and favors can be traded</li>
-        <li>Can do so even mid combat</li>
-        <li>If components are involved (ie Commodities), players must be neighbours (share borders)</li>
-        <li>Simple (ie Commodities for Commodities) or immediate (Commodities for retreat) deals are BINDING DEALS</li>
-        <li>Delayed deals (ie goods for favor in next turn) are NON-BINDING and can be honoured or broken</li>
-      </ul>
-    </div>
-  </p>
-  <p style="position: relative; left: 10px">-- <a href="#a" data-toggle="collapse" data-target="#passing">Passing</a>
-    <div id="passing" class="collapse" style="position: relative; left: 10px">
-      <ul class="content">
-        <li>Only available after Strategy card has been used</li>
-        <li>Can still participate in other players' Strategy cards after passing</li>
       </ul>
     </div>
   </p>
@@ -257,8 +320,57 @@
         <li>Ready all planets after both votes, then start New Round (Strategy Phase)</li>
       </ul>
     </div>
-
-
+  <p><a href="#a" data-toggle="collapse" data-target="#misc">Misc Rules</a>
+    <div id="misc" class="collapse">
+      <ul class="content">
+        <li>Mecatol Rex
+          <ul class="content">
+            <li>Mecatol Rex can only be landed on immediately after active player spends 6 Influence</li>
+            <li>That player also receives 1 VP</li>
+            <li>Agenda Phase is unlocked</li>
+          </ul>
+        </li>
+        <li>Tech Cards
+          <ul class="content">
+            <li>Gained through RESEARCH (ie Technology Strategy card)</li>
+            <li>Some Tech have prerequisite symbols listed on left side of card (Green, Red, Blue or Yellow)</li>
+            <li>These can only be researched if player owns a matching Tech for each symbol listed</li>
+            <li>Some Planets also have Tech symbols that can be used to satisfy prerequisites by exhausting</li>
+          </ul>
+        </li>
+        <li>Sustain Damage
+          <ul class="content">
+            <li>Some advanced ships have the Sustain Damage ability</li>
+            <li>Instead of beind destroyed on a hit, player may flip ship over to cancel 1 hit</li>
+            <li>Ship is repaired at end of round</li>
+          </ul>
+        </li>
+      </ul>
+      <br>
+      <p>References:</p>
+      <p><a href="#a" data-toggle="collapse" data-target="#techcards">Tech cards (excluding ship upgrades and faction-specific techs)</a>
+        <div id="techcards" class="collapse">
+          Note that there's an error in the "--- Metabolism" green card. You gain 3 per turn instead of 2, not 2/1<br>
+          <img src="img/tech.jpg" style="max-width: 100%">
+        </div>
+      </p>
+      <p>The rulebook recommends these 6 races for the first game:
+        <ul class="content">
+          <li>The Xxcha Kingdom (<a href="https://i.imgur.com/sJ9vOYE.jpg" target="_blank">Faction Sheet</a>) (<a href="https://i.imgur.com/rZcn7jN.jpg" target="_blank">Background</a>)</li>
+          <li>The Barony of Letnev (<a href="https://i.imgur.com/SvfGzgk.jpg" target="_blank">Faction Sheet</a>) (<a href="https://i.imgur.com/zgaSLrB.jpg" target="_blank">Background</a>)</li>
+          <li>The Federation of Sol (<a href="https://i.imgur.com/zvXXTW0.jpg" target="_blank">Faction Sheet</a>) (<a href="https://i.imgur.com/Zn0IB29.jpg" target="_blank">Background</a>)</li>
+          <li>The Sardakk N'orr (<a href="https://i.imgur.com/MQJFzik.jpg" target="_blank">Faction Sheet</a>) (<a href="https://i.imgur.com/W89lYVz.jpg" target="_blank">Background</a>)</li>
+          <li>The Emirates of Hacan (<a href="https://i.imgur.com/cWpeeKA.jpg" target="_blank">Faction Sheet</a>) (<a href="https://i.imgur.com/PzZAhpA.jpg" target="_blank">Background</a>)</li>
+          <li>The Universities of Jol-Nar (<a href="https://i.imgur.com/WeSVmTY.jpg" target="_blank">Faction Sheet</a>) (<a href="https://i.imgur.com/lQ43X9U.jpg" target="_blank">Background</a>)</li>
+        </ul>
+      </p>
+      <p>A full album of all the factions is <a href="https://imgur.com/a/kfzt2" target="_blank">here</a></p>
+    </div>
+  </p>
+  <br>
+  <p><a href="https://www.youtube.com/watch?v=_u2xEap5hBM" target="_blank">This video</a> might be more useful if you don't want to read<br>
+  <a href="https://www.fantasyflightgames.com/en/products/twilight-imperium-fourth-edition/" target="_blank">Full rulebook</a>, link at bottom of the page
+  </p>
 </div>
 
 </body>
